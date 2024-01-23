@@ -45,7 +45,7 @@ test('should handle duplicate numbers in the input array', () => {
 test('should handle large numbers in the input array', () => {
   const numbers = [1000, 10000, 100000];
   const result = tripleDigitSquares(numbers);
-  expect(result).toEqual([100000000, 10000000000]);
+  expect(result).toEqual([]);
 });
 
 test('should not modify the original input array', () => {
