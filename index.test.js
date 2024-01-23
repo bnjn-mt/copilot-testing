@@ -19,27 +19,27 @@ test('should return empty array when there are no triple digit squares', () => {
 });
 
 test('should return triple digit squares with negative numbers', () => {
-  const numbers = [-1, -2, -3, -4, -5, -6];
+  const numbers = [-10, -2, -3, -4, -5, -6];
   const result = tripleDigitSquares(numbers);
-  expect(result).toEqual([100, 225, 400, 625]);
+  expect(result).toEqual([100]);
 });
 
 test('should ignore non-numeric elements in the input array', () => {
-  const numbers = [3, 4, '5', 6, 'seven', 8];
+  const numbers = [3, 4, '5', 20, 'seven', 8];
   const result = tripleDigitSquares(numbers);
-  expect(result).toEqual([225, 400, 625, 900]);
+  expect(result).toEqual([400]);
 });
 
 test('should handle floating-point numbers in the input array', () => {
   const numbers = [1.5, 2.5, 3.5, 4.5];
   const result = tripleDigitSquares(numbers);
-  expect(result).toEqual([225, 400]);
+  expect(result).toEqual([]);
 });
 
 test('should handle duplicate numbers in the input array', () => {
-  const numbers = [3, 3, 3, 3];
+  const numbers = [3, 3, 3, 3, 15];
   const result = tripleDigitSquares(numbers);
-  expect(result).toEqual([900]);
+  expect(result).toEqual([225]);
 });
 
 test('should handle large numbers in the input array', () => {
