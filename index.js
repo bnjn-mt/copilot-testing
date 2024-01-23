@@ -3,6 +3,8 @@
 
 function tripleDigitSquares(numbers) {
   squared = numbers.map(x => x**2);
-  tripleDigits = squared.filter(x => 99 < x < 1000);
+  tripleDigits = squared.filter(x => 99 < x && x < 1000);
   return tripleDigits;
 }
+
+module.exports = tripleDigitSquares;
