@@ -1,3 +1,5 @@
+This code and documentation was created with the help of Copilot. Please see the [commit history](https://github.com/bnjn-mt/copilot-testing/commits/main/) for more information.
+
 # Triple Digit Squares
 
 This project provides a JavaScript function called `tripleDigitSquares` that takes an array of numbers as input and returns an array containing the squares of the numbers that are triple digits.
